@@ -1,0 +1,142 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --hover-bgr-color : rgb(230, 230, 230, 1);
+    --box-shadow-color: rgba(0, 0, 0, 0.8);
+    --btn-color : rgba(244, 67, 54, 1);
+    --yellow-color: rgb(255, 216, 57);
+    --red-color: rgb(246, 61, 48);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+}
+/* Animation code */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes scroll-down {
+    from {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes scale-up {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-0.5rem);
+    }
+}
+@keyframes scale-in {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+        filter: brightness(80%);
+    }
+}
+/* BTN CODE */
+.btn {
+    padding: 0.8rem 2.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    font-size: 1.6rem;
+    box-shadow: 0 0 0.3rem var(--box-shadow-color);
+}
+.btn:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+}
+.orange {
+    color: var(--white-color);
+    background-color: var(--btn-color);
+}
+.white {
+    color: var(--text-color);
+    background-color: var(--white-color);
+}
+.error {
+    color: var(--box-shadow-color);
+    background-color: var(--text-color);
+}
+.error:hover {
+    filter: brightness(100%) !important;
+    cursor: default  !important;
+}
+/* content__title code */
+#content .content__title-background--white {
+    padding: 7rem 0 3rem 0;
+}
+#content .content__title-background--black {
+    background-color: var(--text-color);
+}
+#content .content__title {
+    text-align: center;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--white-color);
+    padding: 1.5rem 0 2.5rem 0;
+    box-shadow: 1rem 1rem 0.8rem -1rem var(--box-shadow-color);
+    border-radius: 0.3rem;
+}
+#content .content__title-name {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 600;
+}
+#content .content__title-sub {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.6;
+    font-style: italic;
+}
+/* model form code */
+#form {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    display: none;  
+}
+#form .form__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fade-in ease-in 0.3s;
+}
+#form .form__modal {
+    position: relative;
+    background-color: var(--white-color);
+    margin: auto;
+    border-radius: 0.5rem;
+}
+#form .form__modal-container {
+
+}

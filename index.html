@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tent</title>
+    <link rel="icon" href="./assets/img/Logo/logo.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+    <div id="home">
+        <nav id="nav">
+            <div class="nav__container grid wide">
+                <div class="nav__sidebar-on-mobile-tablet">
+                    <label for="nav__sidebar-checked"  class="nav__sidebar-menu">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <!-- /* SIDE BAR CODE */ -->
+                    <input type="checkbox" name="" id="nav__sidebar-checked" hidden class="nav__sidebar-input">
+                    <label for="nav__sidebar-checked" class="nav__sidebar-overlay"></label>
+                    <div class="nav__sidebar">
+                        <label for="nav__sidebar-checked" class="nav__sidebar-close">
+                            <i class="fas fa-times"></i>
+                        </label>
+                        <div class="nav__sidebar-list">
+                            <label for="nav__sidebar-checked" class="nav__sidebar-item">
+                                <a href="#home" class="nav__sidebar-link">home</a>
+                            </label>
+                            <label for="nav__sidebar-checked" class="nav__sidebar-item nav__sidebar-shop--has">
+                                <div class="nav__sidebar-items">
+                                    <a href="#shop" class="nav__sidebar-link">
+                                        shop
+                                        <i class="nav__sidebar-icon fas fa-angle-down"></i>
+                                    </a>
+                                </div>
+                            </label>
+                            <label for="nav__sidebar-checked" class="nav__sidebar-item">
+                                <a href="#about-us" class="nav__sidebar-link">about - us</a>
+                            </label>
+                            <label for="nav__sidebar-checked" class="nav__sidebar-item">
+                                <a href="#contact" class="nav__sidebar-link">contact</a>
+                            </label>
+                            <label for="nav__sidebar-checked" class="nav__sidebar-item nav__sidebar-more--has">
+                                <div class="nav__sidebar-items">
+                                    <a href="#more" class="nav__sidebar-link">
+                                        more
+                                        <i class="nav__sidebar-icon fas fa-angle-down"></i>
+                                    </a>    
+                                </div>
+                            </label>
+                            <label for="nav__sidebar-checked" class="nav__sidebar-item">
+                                <div class="nav__sidebar-items">
+                                    <a href="#language" class="nav__sidebar-link">
+                                        language
+                                        <i class="nav__sidebar-icon fas fa-angle-down"></i>
+                                    </a>    
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__logo">
+                    <a href="" class="nav__logo-link">
+                        <img src="./assets/img/Logo/logo.jpg" class="nav__logo-img" alt="Logo">
+                    </a>
+                </div>
+                <div class="nav__menu hidden-on-mobile">
+                    <ul class="nav__list hidden-on-mobile-tablet">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">home</a>
+                        </li>
+                        <li class="nav__item nav__shop--has">
+                            <div class="nav__items">
+                                <a href="#shop" class="nav__link">
+                                    shop
+                                    <i class="nav__icon fas fa-angle-down"></i>
+                                </a>
+                            </div>
+                            <!-- Shop code -->
+                            <div class="nav__shop">
+                                <a href="#shop" class="nav__shop-link">buy</a>
+                                <a href="#shop" class="nav__shop-link">rent</a>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about-us" class="nav__link">about - us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">contact</a>
+                        </li>
+                        <li class="nav__item nav__more--has">
+                            <div class="nav__items">
+                                <a href="#more" class="nav__link">
+                                    more
+                                    <i class="nav__icon fas fa-angle-down"></i>
+                                </a>    
+                            </div>
+                            <!-- MORE CODE -->
+                            <div class="nav__more">
+                                <a href="#example" class="nav__more-link">What people say?</a>
+                                <a href="#map" class="nav__more-link">Map</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">login</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">register</a>
+                        </li>
+                        <li class="nav__item nav__language--has">
+                            <div class="nav__items">
+                                <a href="#" class="nav__link">
+                                    english
+                                    <i class="nav__icon fas fa-angle-down"></i>
+                                </a>
+                            </div>
+                            <!-- Language code -->
+                            <div class="nav__language">
+                                <a href="#" class="nav__language-link"><p>Việt Nam</p></a> </a>
+                            </div>
+                        </li>
+                            <!-- Search code  -->
+                        <div class="nav__search nav__search--has">
+                            <i class="fas fa-search"></i>
+                            <div class="nav__input">
+                                <input type="text" placeholder="Search..." class="nav__input-search">
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <!-- Search code on mobile -->
+                <div class="nav__search-on-mobile nav__search-on-mobile--has hidden-on-pc-tablet show-on-mobile">
+                    <i class="fas fa-search"></i>
+                    <div class="nav__input-on-mobile">
+                        <input type="text" placeholder="Search..." class="nav__input-search-on-mobile">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <content id="content">
+            <!-- /* slider code */ -->
+            <div class="content__slider">
+                <div class="slider__container">
+                    <div class="slider__list">
+                        <div class="slider__list-item">
+                            <img src="./assets/img/Slider/1.JPG" class="slider__list-img" alt="Ảnh">
+                        </div>
+                        <div class="slider__list-infor">
+                            <h3 class="slider__infor-title">da nang</h3>
+                            <p class="slider__infor-about">The days without me and you...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__down">
+                    <a class="content__down-link" href="#shop">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+                <div class="content__left">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="content__right">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <!-- /* products code */ -->
+            <div id="shop" class="content__products">
+                <div class="content__products-container grid wide">
+                    <!-- /* content__title code */ -->
+                    <div class="content__title-background--white">
+                        <div class="content__title">
+                            <h2 class="content__title-name">shop</h2>
+                            <h4 class="content__title-sub">Safety products, high quality, prestige on top!</h4>
+                        </div>
+                    </div>
+                    <div class="content__filter-on-mobile-tablet">
+                        <div class="content__filter-list">
+                            <div class="content__filter-item">
+                                <a href="#" class="content__filter-link">Best seller</a>
+                            </div>
+                            <div class="content__filter-item">
+                                <a href="#" class="content__filter-link">Cliff hanger</a>
+                            </div>
+                            <div class="content__filter-item">
+                                <a href="#" class="content__filter-link">Most popular</a>
+                            </div>
+                            <div class="content__filter-item">
+                                <a href="#" class="content__filter-link"p>Camping tent</a>
+                            </div>
+                            <div class="content__filter-item">
+                                <a href="#" class="content__filter-link"p>Travel tools</a>
+                            </div>
+                            <div class="content__filter-item">
+                                <a href="#" class="content__filter-link"p>Travel clothes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row padding">
+                        <!-- /* categories */ -->
+                        <div class="col l-3 m-0 c-0">
+                            <div class="products__categories">
+                                <div class="products__categories-title">
+                                    <i class="fas fa-list"></i>
+                                    <h3>category</h3>
+                                </div>
+                                <div class="products__categories-list">
+                                    <div class="products__categories-list-item">
+                                        <div class="products__categories-list-title">
+                                            <i class="fas fa-caret-right"></i>
+                                            <h4 class="products__categories-name">Top-ranked products:</h4>
+                                        </div>
+                                        <ul class="products__categories-items">
+                                            <li class="products__categories-about">
+                                                <a href="#" class="products__categories-link">- Best seller</a>
+                                            </li>
+                                            <li class="products__categories-about">
+                                                <a href="#" class="products__categories-link">- Cliff hanger</a>
+                                            </li>
+                                            <li class="products__categories-about">
+                                                <a href="#" class="products__categories-link">- Most popular</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="products__categories-list">
+                                    <div class="products__categories-list-item">
+                                        <div class="products__categories-list-title">
+                                            <i class="fas fa-caret-right"></i>
+                                            <h4 class="products__categories-name">Option:</h4>
+                                        </div>
+                                        <ul class="products__categories-items">
+                                            <li class="products__categories-about">
+                                                <a href="#" class="products__categories-link">- Camping Tent</a>
+                                            </li>
+                                            <li class="products__categories-about">
+                                                <a href="#" class="products__categories-link">- Travel tools</a>
+                                            </li>
+                                            <li class="products__categories-about">
+                                                <a href="#" class="products__categories-link">- Travel clothes</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /* items code */ -->
+                        <div class="col l-9 m-12 c-12">
+                            <!-- /* filter code */ -->
+                            <div class="grid">
+                                <div class="content__filter-container">
+                                    <div class="content__products-filter">
+                                        <div class="products__filter-list">
+                                            <div class="products__filter-item">
+                                                <p class="products__filter-title">Sort :</p>
+                                            </div>
+                                            <div class="products__filter-item">
+                                                <a href="#" class="products__filter-item-link">
+                                                <button class="products__filter-popular btn white">Popular</button>
+                                                </a>
+                                            </div>
+                                            <div class="products__filter-item">
+                                                <a href="#" class="products__filter-item-link">
+                                                <button class="products__filter-newest btn orange">Newest</button>
+                                                </a>
+                                            </div>
+                                            <div class="products__filter-item">
+                                                <a href="#" class="products__filter-item-link   ">
+                                                    <button class="products__filter-seller btn white">Top seller</button>
+                                                </a>
+                                            </div>
+                                            <div class="products__filter-item content__products-price--has">
+                                                <button class="products__filter-price btn white">
+                                                    <p>Price</p> 
+                                                    <i class="fas fa-angle-down"></i>
+                                                    <!-- Price code -->
+                                                </button>
+                                                <div class="content__products-price">
+                                                    <a href="#" class="products__filter-price-link">
+                                                        <p>0 - 500.000VND</p>
+                                                    </a>
+                                                    <a href="#" class="products__filter-price-link">
+                                                        <p>1.000.000VND - 5.000.00VND</p>
+                                                    </a>
+                                                    <a href="#" class="products__filter-price-link">
+                                                        <p>500.000VND - 1.000.000VND</p>
+
+                                                    </a>
+                                                    <a href="#" class="products__filter-price-link">
+                                                        <p>Over 5.000.00VND</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="products__filter-pagination">
+                                            <div class="products__pagination-number">
+                                                <p class="products__pagination-now">1</p>
+                                                <p>/</p>
+                                                <p class="products__pagination-total">5</p>
+                                            </div>
+                                            <div class="products__pagination-page">
+                                                <button class="products__pagination-left error">
+                                                    <i class="fas fa-angle-left"></i>
+                                                </button>
+                                                <button class="products__pagination-right orange">
+                                                    <i class="fas fa-angle-right"></i>  
+                                                </button>
+                                            </div>
+                                        </div>  
+                                    </div> 
+                                </div> 
+                            </div>
+                            <div class="content__products-list">
+                                <div class="row">
+                                    <div class="col l-4 m-6 c-12">
+                                        <div class="products__list">
+                                            <div  class="products__items">
+                                                <div class="products__items-picture">
+                                                    <a href="#">
+                                                        <img src="./assets/img/products__item/TENTS/eureka.JPG" class="products__items-img" alt="Lều eurenka">
+                                                    </a>
+                                                </div>
+                                                <div class="products__items-infor">
+                                                    <div class="products__items-title">
+                                                        <h3 class="products__items-name">4-PERSON EUREKA APEX 3XT EXTERNAL SERIES</h3>
+                                                        <p class="products__items-sub">Origin: Vietnamese goods - Fabric material: waterproof polyester fabric - Tent frame material: Carbon fiber, diameter 9.5mm, durable, light, elastic. - Material of ground wire: Stainless steel, 15cm long. - Size: 2.0mx 2.4mx 1.5 m (Length x Width x Height) - Tent pile: 10 pieces, 4 strands (stretch in wind or heavy rain). - Size when folded: 65cm x 15cm (Length x Diameter) - Weight: 3.5kg - Entrance: 2 main doors for convenience in, each door has 1 layer of insect-proof mesh - Sewing: Waterproof glue by sewing-draw technology. - 12 months warranty: zipper, zipper, wrapped. Separate tent frame with permanent warranty</p>
+                                                    </div>
+                                                    <div class="products__items-prices">
+                                                        <p class="products__items-prices--old">1.500.000VND</p>
+                                                        <p class="products__items-prices--new">1.000.000VND</p>
+                                                    </div>
+                                                    <div class="products__items-active">
+                                                        <div class="products__items-active-love products__items-active-love--loved">
+                                                            <i class="products__items-active-love--notyet far fa-heart"></i>
+                                                            <i class="products__items-active-love--done fas fa-heart"></i>
+                                                        </div>
+                                                        <div class="products__items-active-stars">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="products__items-others">
+                                                        <div class="products__items-others-sell">
+                                                            <p class="products__items-others-sell--sold">Sold: 1000</p>
+                                                            <p class="products__items-others-sell--notyet">Rest: 1</p>
+                                                        </div>
+                                                        <div class="products__items-others-city">Da Nang</div>
+                                                    </div>
+                                                </div>
+                                                <div class="products__items-favorite">
+                                                    <p>
+                                                        <i class="fas fa-check"></i>
+                                                        Favourite
+                                                    </p>
+                                                </div>
+                                                <div class="products__items-sell-off">
+                                                    <p class="products__items-sell-off-percent">33%</p>
+                                                    <p class="products__items-sell-off-decrease">SALE</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-12">
+                                        <div class="products__list">
+                                            <div  class="products__items">
+                                                <div class="products__items-picture">
+                                                    <a href="#">
+                                                        <img src="./assets/img/products__item/TENTS/eureka.JPG" class="products__items-img" alt="Lều eurenka">
+                                                    </a>
+                                                </div>
+                                                <div class="products__items-infor">
+                                                    <div class="products__items-title">
+                                                        <h3 class="products__items-name">4-PERSON EUREKA APEX 3XT EXTERNAL SERIES</h3>
+                                                        <p class="products__items-sub">Origin: Vietnamese goods - Fabric material: waterproof polyester fabric - Tent frame material: Carbon fiber, diameter 9.5mm, durable, light, elastic. - Material of ground wire: Stainless steel, 15cm long. - Size: 2.0mx 2.4mx 1.5 m (Length x Width x Height) - Tent pile: 10 pieces, 4 strands (stretch in wind or heavy rain). - Size when folded: 65cm x 15cm (Length x Diameter) - Weight: 3.5kg - Entrance: 2 main doors for convenience in, each door has 1 layer of insect-proof mesh - Sewing: Waterproof glue by sewing-draw technology. - 12 months warranty: zipper, zipper, wrapped. Separate tent frame with permanent warranty</p>
+                                                    </div>
+                                                    <div class="products__items-prices">
+                                                        <p class="products__items-prices--old">1.500.000VND</p>
+                                                        <p class="products__items-prices--new">1.000.000VND</p>
+                                                    </div>
+                                                    <div class="products__items-active">
+                                                        <div class="products__items-active-love products__items-active-love--loved">
+                                                            <i class="products__items-active-love--notyet far fa-heart"></i>
+                                                            <i class="products__items-active-love--done fas fa-heart"></i>
+                                                        </div>
+                                                        <div class="products__items-active-stars">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="products__items-others">
+                                                        <div class="products__items-others-sell">
+                                                            <p class="products__items-others-sell--sold">Sold: 1000</p>
+                                                            <p class="products__items-others-sell--notyet">Rest: 1</p>
+                                                        </div>
+                                                        <div class="products__items-others-city">Da Nang</div>
+                                                    </div>
+                                                </div>
+                                                <div class="products__items-favorite">
+                                                    <p> 
+                                                        <i class="fas fa-check"></i>
+                                                        Favourite
+                                                    </p>
+                                                </div>
+                                                <div class="products__items-sell-off">
+                                                    <p class="products__items-sell-off-percent">33%</p>
+                                                    <p class="products__items-sell-off-decrease">SALE</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-0 c-0">
+                                        <div class="products__list">
+                                            <div  class="products__items">
+                                                <div class="products__items-picture">
+                                                    <a href="#">
+                                                        <img src="./assets/img/products__item/TENTS/eureka.JPG" class="products__items-img" alt="Lều eurenka">
+                                                    </a>
+                                                </div>
+                                                <div class="products__items-infor">
+                                                    <div class="products__items-title">
+                                                        <h3 class="products__items-name">4-PERSON EUREKA APEX 3XT EXTERNAL SERIES</h3>
+                                                        <p class="products__items-sub">Origin: Vietnamese goods - Fabric material: waterproof polyester fabric - Tent frame material: Carbon fiber, diameter 9.5mm, durable, light, elastic. - Material of ground wire: Stainless steel, 15cm long. - Size: 2.0mx 2.4mx 1.5 m (Length x Width x Height) - Tent pile: 10 pieces, 4 strands (stretch in wind or heavy rain). - Size when folded: 65cm x 15cm (Length x Diameter) - Weight: 3.5kg - Entrance: 2 main doors for convenience in, each door has 1 layer of insect-proof mesh - Sewing: Waterproof glue by sewing-draw technology. - 12 months warranty: zipper, zipper, wrapped. Separate tent frame with permanent warranty</p>
+                                                    </div>
+                                                    <div class="products__items-prices">
+                                                        <p class="products__items-prices--old">1.500.000VND</p>
+                                                        <p class="products__items-prices--new">1.000.000VND</p>
+                                                    </div>
+                                                    <div class="products__items-active">
+                                                        <div class="products__items-active-love products__items-active-love--loved">
+                                                            <i class="products__items-active-love--notyet far fa-heart"></i>
+                                                            <i class="products__items-active-love--done fas fa-heart"></i>
+                                                        </div>
+                                                        <div class="products__items-active-stars">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="products__items-others">
+                                                        <div class="products__items-others-sell">
+                                                            <p class="products__items-others-sell--sold">Sold: 1000</p>
+                                                            <p class="products__items-others-sell--notyet">Rest: 1</p>
+                                                        </div>
+                                                        <div class="products__items-others-city">Da Nang</div>
+                                                    </div>
+                                                </div>
+                                                <div class="products__items-favorite">
+                                                    <p>
+                                                        <i class="fas fa-check"></i>
+                                                        Favourite
+                                                    </p>
+                                                </div>
+                                                <div class="products__items-sell-off">
+                                                    <p class="products__items-sell-off-percent">33%</p>
+                                                    <p class="products__items-sell-off-decrease">SALE</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row margin-top">
+                                    <div class="col l-4 m-6 c-12">
+                                        <div class="products__list">
+                                            <div  class="products__items">
+                                                <div class="products__items-picture">
+                                                    <a href="#">
+                                                        <img src="./assets/img/products__item/TENTS/eureka.JPG" class="products__items-img" alt="Lều eurenka">
+                                                    </a>
+                                                </div>
+                                                <div class="products__items-infor">
+                                                    <div class="products__items-title">
+                                                        <h3 class="products__items-name">4-PERSON EUREKA APEX 3XT EXTERNAL SERIES</h3>
+                                                        <p class="products__items-sub">Origin: Vietnamese goods - Fabric material: waterproof polyester fabric - Tent frame material: Carbon fiber, diameter 9.5mm, durable, light, elastic. - Material of ground wire: Stainless steel, 15cm long. - Size: 2.0mx 2.4mx 1.5 m (Length x Width x Height) - Tent pile: 10 pieces, 4 strands (stretch in wind or heavy rain). - Size when folded: 65cm x 15cm (Length x Diameter) - Weight: 3.5kg - Entrance: 2 main doors for convenience in, each door has 1 layer of insect-proof mesh - Sewing: Waterproof glue by sewing-draw technology. - 12 months warranty: zipper, zipper, wrapped. Separate tent frame with permanent warranty</p>
+                                                    </div>
+                                                    <div class="products__items-prices">
+                                                        <p class="products__items-prices--old">1.500.000VND</p>
+                                                        <p class="products__items-prices--new">1.000.000VND</p>
+                                                    </div>
+                                                    <div class="products__items-active">
+                                                        <div class="products__items-active-love products__items-active-love--loved">
+                                                            <i class="products__items-active-love--notyet far fa-heart"></i>
+                                                            <i class="products__items-active-love--done fas fa-heart"></i>
+                                                        </div>
+                                                        <div class="products__items-active-stars">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="products__items-others">
+                                                        <div class="products__items-others-sell">
+                                                            <p class="products__items-others-sell--sold">Sold: 1000</p>
+                                                            <p class="products__items-others-sell--notyet">Rest: 1</p>
+                                                        </div>
+                                                        <div class="products__items-others-city">Da Nang</div>
+                                                    </div>
+                                                </div>
+                                                <div class="products__items-favorite">
+                                                    <p>
+                                                        <i class="fas fa-check"></i>
+                                                        Favourite
+                                                    </p>
+                                                </div>
+                                                <div class="products__items-sell-off">
+                                                    <p class="products__items-sell-off-percent">33%</p>
+                                                    <p class="products__items-sell-off-decrease">SALE</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-12">
+                                        <div class="products__list">
+                                            <div  class="products__items">
+                                                <div class="products__items-picture">
+                                                    <a href="#">
+                                                        <img src="./assets/img/products__item/TENTS/eureka.JPG" class="products__items-img" alt="Lều eurenka">
+                                                    </a>
+                                                </div>
+                                                <div class="products__items-infor">
+                                                    <div class="products__items-title">
+                                                        <h3 class="products__items-name">4-PERSON EUREKA APEX 3XT EXTERNAL SERIES</h3>
+                                                        <p class="products__items-sub">Origin: Vietnamese goods - Fabric material: waterproof polyester fabric - Tent frame material: Carbon fiber, diameter 9.5mm, durable, light, elastic. - Material of ground wire: Stainless steel, 15cm long. - Size: 2.0mx 2.4mx 1.5 m (Length x Width x Height) - Tent pile: 10 pieces, 4 strands (stretch in wind or heavy rain). - Size when folded: 65cm x 15cm (Length x Diameter) - Weight: 3.5kg - Entrance: 2 main doors for convenience in, each door has 1 layer of insect-proof mesh - Sewing: Waterproof glue by sewing-draw technology. - 12 months warranty: zipper, zipper, wrapped. Separate tent frame with permanent warranty</p>
+                                                    </div>
+                                                    <div class="products__items-prices">
+                                                        <p class="products__items-prices--old">1.500.000VND</p>
+                                                        <p class="products__items-prices--new">1.000.000VND</p>
+                                                    </div>
+                                                    <div class="products__items-active">
+                                                        <div class="products__items-active-love products__items-active-love--loved">
+                                                            <i class="products__items-active-love--notyet far fa-heart"></i>
+                                                            <i class="products__items-active-love--done fas fa-heart"></i>
+                                                        </div>
+                                                        <div class="products__items-active-stars">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="products__items-others">
+                                                        <div class="products__items-others-sell">
+                                                            <p class="products__items-others-sell--sold">Sold: 1000</p>
+                                                            <p class="products__items-others-sell--notyet">Rest: 1</p>
+                                                        </div>
+                                                        <div class="products__items-others-city">Da Nang</div>
+                                                    </div>
+                                                </div>
+                                                <div class="products__items-favorite">
+                                                    <p>
+                                                        <i class="fas fa-check"></i>
+                                                        Favourite
+                                                    </p>
+                                                </div>
+                                                <div class="products__items-sell-off">
+                                                    <p class="products__items-sell-off-percent">33%</p>
+                                                    <p class="products__items-sell-off-decrease">SALE</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-0 c-0">
+                                        <div class="products__list">
+                                            <div  class="products__items">
+                                                <div class="products__items-picture">
+                                                    <a href="#">
+                                                        <img src="./assets/img/products__item/TENTS/eureka.JPG" class="products__items-img" alt="Lều eurenka">
+                                                    </a>
+                                                </div>
+                                                <div class="products__items-infor">
+                                                    <div class="products__items-title">
+                                                        <h3 class="products__items-name">4-PERSON EUREKA APEX 3XT EXTERNAL SERIES</h3>
+                                                        <p class="products__items-sub">Origin: Vietnamese goods - Fabric material: waterproof polyester fabric - Tent frame material: Carbon fiber, diameter 9.5mm, durable, light, elastic. - Material of ground wire: Stainless steel, 15cm long. - Size: 2.0mx 2.4mx 1.5 m (Length x Width x Height) - Tent pile: 10 pieces, 4 strands (stretch in wind or heavy rain). - Size when folded: 65cm x 15cm (Length x Diameter) - Weight: 3.5kg - Entrance: 2 main doors for convenience in, each door has 1 layer of insect-proof mesh - Sewing: Waterproof glue by sewing-draw technology. - 12 months warranty: zipper, zipper, wrapped. Separate tent frame with permanent warranty</p>
+                                                    </div>
+                                                    <div class="products__items-prices">
+                                                        <p class="products__items-prices--old">1.500.000VND</p>
+                                                        <p class="products__items-prices--new">1.000.000VND</p>
+                                                    </div>
+                                                    <div class="products__items-active">
+                                                        <div class="products__items-active-love products__items-active-love--loved">
+                                                            <i class="products__items-active-love--notyet far fa-heart"></i>
+                                                            <i class="products__items-active-love--done fas fa-heart"></i>
+                                                        </div>
+                                                        <div class="products__items-active-stars">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="products__items-others">
+                                                        <div class="products__items-others-sell">
+                                                            <p class="products__items-others-sell--sold">Sold: 1000</p>
+                                                            <p class="products__items-others-sell--notyet">Rest: 1</p>
+                                                        </div>
+                                                        <div class="products__items-others-city">Da Nang</div>
+                                                    </div>
+                                                </div>
+                                                <div class="products__items-favorite">
+                                                    <p>
+                                                        <i class="fas fa-check"></i>
+                                                        Favourite
+                                                    </p>
+                                                </div>
+                                                <div class="products__items-sell-off">
+                                                    <p class="products__items-sell-off-percent">33%</p>
+                                                    <p class="products__items-sell-off-decrease">SALE</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /* about-us code */ -->    
+            <div id="about-us" class="content__about-us">
+                <div class="content__title-background--white content__title-background--black">
+                    <div class="grid wide">
+                        <div class="content__title">
+                            <h2 class="content__title-name">about - us</h2>
+                            <h4 class="content__title-sub">Dare to think, dare to do, dare to make a difference!</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid wide">
+                    <div class="content__about-us-container">
+                        <div class="content__about-us-infor">
+                            <h3 class="content__about-us-infor-name">Team Dan choi</h3>
+                            <p class="content__about-us-infor-about">We are passionate about traveling, wanting to relieve stress from life through trips ...</p>
+                            <p class="content__about-us-infor-about">Since, we have together saved beautiful memories, useful experiences and the necessary equipment and equipment to prepare for a long journey ...</p>
+                            <p class="content__about-us-infor-about">Please refer to the quality items above. These are essential items for those who want to conquer roads!</p>
+                            <div class="content__about-us-button">
+                                <a href="#shop" class="content__about-us-button-link">
+                                <button class="content__about-us-btn">Buy now</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content__about-us-picture">
+                            <img src="./assets/img/about-us/team.jpg" alt="Ảnh team" class="content__about-us-img">
+                        </div>
+                    </div>
+                    <!-- our trips code -->
+                    <div class="content__about-us-trips">
+                        <div class="content__about-us-list">
+                            <div class="content__about-us-item">
+                                <img class="content__about-us-list-img" src="./assets/img/about-us/Our-trips/nghingoi.jpg" alt="Ảnh">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /* contact code */ -->
+            <div id="contact" class="content__contact">
+                <div class="content__title-background--white">
+                    <div class="grid wide">
+                        <div class="content__title">
+                            <h2 class="content__title-name">contact</h2>
+                            <h4 class="content__title-sub">We always have what you need, contact us now!</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid wide">
+                    <div class="content__contact-container">
+                        <div class="content__contact-infor">
+                            <ul class="content__contact-list">
+                                <li class="content__contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Da Nang, Viet Nam
+                                </li>
+                                <li class="content__contact-item">
+                                    <i class="fab fa-youtube"></i>
+                                    Youtube:
+                                    <a href="https://www.youtube.com/channel/UCcmuOsskCmZyu737p1FvDrA" class="content__contact-item-link">Team NNDP</a>
+                                </li>
+                                <li class="content__contact-item">
+                                    <i class="fab fa-facebook-square"></i>
+                                    Facebook:
+                                    <a href="https://www.facebook.com/phat.nhat.967806" class="content__contact-item-link">Teamdanchoi</a>
+                                </li>
+                                <li class="content__contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    Phone: 
+                                    <a href="tel:+84329702303" class="content__contact-item-link">+84329702303</a>
+                                </li>
+                                <li class="content__contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    Email: 
+                                    <a href="mailto:teamdanchoi2k2@gmail.com" class="content__contact-item-link">teamdanchoi2k2@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content__contact-input">
+                            <div class="content__contact-input-items">
+                                <input type="text" required placeholder="Name" class="content__contact-input-item content__contact-input-item-name">
+                                <input type="email" required placeholder="Email" class="content__contact-input-item">
+                            </div>
+                            <div class="content__contact-input-items">
+                            <input type="text" required placeholder="Message" class="content__contact-input-item">
+                            </div>
+                            <div class="content__contact-input-button">
+                                <button class="content__contact-input-btn">send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="example" class="content__example">
+                <div class="content__title-background--white content__title-background--black">
+                    <div class="grid wide">
+                        <div class="content__title">
+                            <h2 class="content__title-name">What people say?</h2>
+                            <h4 class="content__title-sub">The customer is god, we always give you a great experience!</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid wide">
+                    <div class="content__example-container">
+                        <div class="row">
+                            <div class="col l-4 m-6 c-12">
+                                <div class="content__example-picture">
+                                    <img src="https://cdn.shopify.com/s/files/1/0070/5229/6251/files/testimonial3_400x.jpg?v=1579719460" alt="Ảnh người thuê" class="content__example-img">
+                                </div>
+                                <div class="content__example-infor">
+                                    <p class="content__example-about">"Great service! My boyfriend and I rented the tent for two nights when we got back to the countryside. Great service and they had everything we needed so we didn't need to buy anything ourselves. It was nice to have the dining table and chairs so we could sit outside or even inside the tent. Staff was so cute and helpful. Will definitely recommend!"</p>
+                                    <p class="content__example-author">--Tom Cruise</p>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <div class="content__example-picture">
+                                    <img src="https://cdn.shopify.com/s/files/1/0070/5229/6251/files/testimonial_400x.jpg?v=1579719095" alt="Ảnh người thuê" class="content__example-img">
+                                </div>
+                                <div class="content__example-infor">
+                                    <p class="content__example-about">"Wonder service and helpful staff. They have everything I need and their equipment is comfortable. Highly recommended!"</p>
+                                    <p class="content__example-author">--Marie Curie</p>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <div class="content__example-picture">
+                                    <img src="https://cdn.shopify.com/s/files/1/0070/5229/6251/files/testimonial2_400x.jpg?v=1579719214" alt="Ảnh người thuê" class="content__example-img">
+                                </div>
+                                <div class="content__example-infor">
+                                    <p class="content__example-about">“This is a great company with a very friendly staff! I rented a 70 liter backpack for a walk that I had planned and didn't have money to rent equipment for. Backpacks are available for rent in the city center. Luckily, I found this place! They gave me an incredible deal on my rent and even agreed to keep my backpack smaller for me during use. Great service and very accommodating company!"</p>
+                                    <p class="content__example-author">--Leonardo DiCaprio</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /* map code */ -->
+            <div id="map" class="content__map">
+                <div class="content__title-background--white">
+                    <div class="grid wide">
+                        <div class="content__title">
+                            <h2 class="content__title-name">Map</h2>
+                            <h4 class="content__title-sub">You may not know: Our address...</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__map-container">
+                    <div class="content__map-picture">
+                        <img src="./assets/img/map/map.png" alt="Map" class="content__map-img">
+                    </div>
+                </div>
+            </div>
+        </content>
+        <footer id="footer">
+            <!-- /* footer more */ -->
+            <div class="footer__more">
+                <div class="row">
+                    <div class="col l-2-4 m-3 c-6">
+                        <h3 class="footer__more-title">Customer Services</h3>
+                        <ul class="footer__more-list">
+                            <li class="footer__more-item">
+                                <a href="#" class="footer__more-link">Help Center</a>
+                            </li>
+                            <li class="footer__more-item">
+                                <a href="#" class="footer__more-link">Shop mail</a>
+                            </li>
+                            <li class="footer__more-item">
+                                <a href="#" class="footer__more-link">Shopping guide</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6">
+                        <h3 class="footer__more-title">About - Us</h3>
+                        <ul class="footer__more-list">
+                            <li class="footer__more-item">
+                                <a href="#" class="footer__more-link">About the Team Dan Choi</a>
+                            </li>
+                            <li class="footer__more-item">
+                                <a href="#" class="footer__more-link">Recruitment</a>
+                            </li>
+                            <li class="footer__more-item">
+                                <a href="#" class="footer__more-link">Policies & Rules</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-0 c-0">
+                        <h3 class="footer__more-title">Danh mục</h3>
+                        <ul class="footer__more-list">
+                            <li class="footer__more-item">
+                                <a href="#" class="footer__more-link">Shop Team Dan Choi</a>
+                            </li>
+                            <li class="footer__more-item">
+                                <a href="#" class="footer__more-link">Contact - us</a>
+                            </li>
+                            <li class="footer__more-item">
+                                <a href="#" class="footer__more-link">Feedback from customers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6">
+                        <h3 class="footer__more-title">Follow - us</h3>
+                        <ul class="footer__more-list">
+                            <li class="footer__more-item">
+                                <a href="https://www.facebook.com/phat.nhat.967806" class="footer__more-link">
+                                    <i class="fab fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer__more-item">
+                                <a href="https://www.youtube.com/channel/UCcmuOsskCmZyu737p1FvDrA" class="footer__more-link">
+                                    <i class="fab fa-youtube"></i>
+                                    Youtube
+                                </a>
+                            </li>
+                            <li class="footer__more-item">
+                                <a href="http://127.0.0.1:5500/My_project/Tent-Web/index.html" class="footer__more-link">
+                                    <i class="fab fa-chrome"></i>
+                                    Website
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6">
+                        <h3 class="footer__more-title">Download app</h3>
+                        <ul class="footer__more-list footer__more-download">
+                            <li class="footer__more-item">
+                                <img src="./assets/img/footer/QR.png" alt="QR" class="footer__more-img">
+                            </li>
+                            <li class="footer__more-item">
+                                <div class="footer__more-apps">
+                                    <a href="#" class="footer__more-link ">
+                                        <img src="./assets/img/footer/App-store.png" alt="App-store" class="footer__more-img-app">
+                                    </a>
+                                    <a href="#" class="footer__more-link">
+                                        <img src="./assets/img/footer/CH-PLAY.png" alt="CH-Play" class="footer__more-img-app">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /* footer__policies */ -->
+            <div class="footer__policies">
+                <a href="#" class="footer__policies-link footer__policies-link-separate">
+                    <h3 class="footer__policies-title">privacy policy</h3>
+                </a>
+                <a href="#" class="footer__policies-link footer__policies-link-separate">
+                    <h3 class="footer__policies-title">operation regulations</h3>
+                </a>
+                <a href="#" class="footer__policies-link footer__policies-link-separate">
+                    <h3 class="footer__policies-title">Logistics Service</h3>
+                </a>
+                <a href="#" class="footer__policies-link">
+                    <h3 class="footer__policies-title">Return and Refund Policy</h3>
+                </a>
+            </div>
+            <!-- /* footer__infor code */ -->
+            <div class="footer__infor">
+                <div class="footer__infor_logo">
+                    <img src="./assets/img/footer/Logo.png" alt="Logo" class="footer__infor_logo-img">
+                </div>
+                <div class="footer__infor-copyrights">
+                    <p class="footer__infor-copyrights-about">@2021 - Copyright by Team Dan Choi</p>
+                </div>
+            </div>
+        </footer>
+        <!-- /* model form code */ -->
+        <form action="" id="form">
+            <div class="form__overlay"></div>
+            <div class="form__modal">
+                <div class="form__modal-container">
+
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
